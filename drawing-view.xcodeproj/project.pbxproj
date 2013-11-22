@@ -13,7 +13,6 @@
 		94901D29183ACF730074E25F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94901D27183ACF730074E25F /* InfoPlist.strings */; };
 		94901D2B183ACF730074E25F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94901D2A183ACF730074E25F /* main.m */; };
 		94901D2F183ACF730074E25F /* NHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94901D2E183ACF730074E25F /* NHAppDelegate.m */; };
-		94901D32183ACF730074E25F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94901D30183ACF730074E25F /* Main.storyboard */; };
 		94901D35183ACF730074E25F /* NHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94901D34183ACF730074E25F /* NHViewController.m */; };
 		94901D37183ACF730074E25F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94901D36183ACF730074E25F /* Images.xcassets */; };
 		94901D3E183ACF740074E25F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94901D3D183ACF740074E25F /* XCTest.framework */; };
@@ -21,6 +20,8 @@
 		94901D40183ACF740074E25F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94901D22183ACF730074E25F /* UIKit.framework */; };
 		94901D48183ACF740074E25F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94901D46183ACF740074E25F /* InfoPlist.strings */; };
 		94901D4A183ACF740074E25F /* drawing_viewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94901D49183ACF740074E25F /* drawing_viewTests.m */; };
+		94901D55183AD03B0074E25F /* NHDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94901D54183AD03B0074E25F /* NHDrawingView.m */; };
+		94901D58183AD10D0074E25F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94901D57183AD10D0074E25F /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,6 @@
 		94901D2C183ACF730074E25F /* drawing-view-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "drawing-view-Prefix.pch"; sourceTree = "<group>"; };
 		94901D2D183ACF730074E25F /* NHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHAppDelegate.h; sourceTree = "<group>"; };
 		94901D2E183ACF730074E25F /* NHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHAppDelegate.m; sourceTree = "<group>"; };
-		94901D31183ACF730074E25F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94901D33183ACF730074E25F /* NHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHViewController.h; sourceTree = "<group>"; };
 		94901D34183ACF730074E25F /* NHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NHViewController.m; sourceTree = "<group>"; };
 		94901D36183ACF730074E25F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +53,9 @@
 		94901D45183ACF740074E25F /* drawing-viewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "drawing-viewTests-Info.plist"; sourceTree = "<group>"; };
 		94901D47183ACF740074E25F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		94901D49183ACF740074E25F /* drawing_viewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = drawing_viewTests.m; sourceTree = "<group>"; };
+		94901D53183AD03B0074E25F /* NHDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDrawingView.h; sourceTree = "<group>"; };
+		94901D54183AD03B0074E25F /* NHDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDrawingView.m; sourceTree = "<group>"; };
+		94901D57183AD10D0074E25F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		94901D12183ACF730074E25F = {
 			isa = PBXGroup;
 			children = (
+				94901D57183AD10D0074E25F /* Main.storyboard */,
 				94901D24183ACF730074E25F /* drawing-view */,
 				94901D43183ACF740074E25F /* drawing-viewTests */,
 				94901D1D183ACF730074E25F /* Frameworks */,
@@ -112,13 +116,15 @@
 		94901D24183ACF730074E25F /* drawing-view */ = {
 			isa = PBXGroup;
 			children = (
+				94901D56183AD0CD0074E25F /* iPad */,
 				94901D2D183ACF730074E25F /* NHAppDelegate.h */,
 				94901D2E183ACF730074E25F /* NHAppDelegate.m */,
-				94901D30183ACF730074E25F /* Main.storyboard */,
 				94901D33183ACF730074E25F /* NHViewController.h */,
 				94901D34183ACF730074E25F /* NHViewController.m */,
 				94901D36183ACF730074E25F /* Images.xcassets */,
 				94901D25183ACF730074E25F /* Supporting Files */,
+				94901D53183AD03B0074E25F /* NHDrawingView.h */,
+				94901D54183AD03B0074E25F /* NHDrawingView.m */,
 			);
 			path = "drawing-view";
 			sourceTree = "<group>";
@@ -150,6 +156,13 @@
 				94901D46183ACF740074E25F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94901D56183AD0CD0074E25F /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +242,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94901D58183AD10D0074E25F /* Main.storyboard in Resources */,
 				94901D37183ACF730074E25F /* Images.xcassets in Resources */,
 				94901D29183ACF730074E25F /* InfoPlist.strings in Resources */,
-				94901D32183ACF730074E25F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +266,7 @@
 				94901D35183ACF730074E25F /* NHViewController.m in Sources */,
 				94901D2F183ACF730074E25F /* NHAppDelegate.m in Sources */,
 				94901D2B183ACF730074E25F /* main.m in Sources */,
+				94901D55183AD03B0074E25F /* NHDrawingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +295,6 @@
 				94901D28183ACF730074E25F /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		94901D30183ACF730074E25F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				94901D31183ACF730074E25F /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		94901D46183ACF740074E25F /* InfoPlist.strings */ = {
@@ -382,7 +388,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "drawing-view/drawing-view-Prefix.pch";
 				INFOPLIST_FILE = "drawing-view/drawing-view-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,7 +403,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "drawing-view/drawing-view-Prefix.pch";
 				INFOPLIST_FILE = "drawing-view/drawing-view-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

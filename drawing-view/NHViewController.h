@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class NHDrawingView;
+
 @interface NHViewController : UIViewController
+
+@property (nonatomic, weak) IBOutlet NHDrawingView *drawingView;
 
 @end

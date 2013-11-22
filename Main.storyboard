@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="Lmc-yM-IFa">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="F93-vG-st0">
+            <objects>
+                <viewController id="Lmc-yM-IFa" customClass="NHViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3YN-Rt-4OP"/>
+                        <viewControllerLayoutGuide type="bottom" id="KXj-7I-rf3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IcP-KM-8RV">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qM-wg-839" customClass="NHDrawingView">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8qM-wg-839" secondAttribute="trailing" id="0oq-mE-Jok"/>
+                            <constraint firstItem="8qM-wg-839" firstAttribute="leading" secondItem="IcP-KM-8RV" secondAttribute="leading" id="Ht8-KW-NWB"/>
+                            <constraint firstAttribute="bottom" secondItem="8qM-wg-839" secondAttribute="bottom" id="Ldn-b9-JML"/>
+                            <constraint firstItem="8qM-wg-839" firstAttribute="top" secondItem="IcP-KM-8RV" secondAttribute="top" id="sza-Dd-mBM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drawingView" destination="8qM-wg-839" id="WmQ-9x-iLK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZB-8K-9Rv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="508" y="239"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="lightContent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
